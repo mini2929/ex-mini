@@ -22,6 +22,7 @@ btns.forEach((btn,idx) => {
     btn.addEventListener("click", () => {
         console.log(idx);
         // new Anime (panel, {marginLeft:-400*idx}, {duration:600});
+        // marinLeft는 고정값일 경우에만 적용됨
         new Anime (panel, {left:( -100 * idx ) + "%"}, {duration:600});
     });
 });
