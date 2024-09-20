@@ -24,6 +24,10 @@ btns.forEach((btn,idx) => {
         // new Anime (panel, {marginLeft:-400*idx}, {duration:600});
         // marinLeft는 고정값일 경우에만 적용됨
         new Anime (panel, {left:( -100 * idx ) + "%"}, {duration:600});
+
+        btns.forEach((btn) => btn.classList.remove("on"));
+
+        btns[idx].classList.add("on");
     });
 });
 
@@ -31,3 +35,9 @@ btns.forEach((btn,idx) => {
 // idx 숫자 곱하기 width 값만큼 움직이기
 // width 퍼센테이지로 바꾸기
 // script에서 width값 지정
+
+
+// 특정 요소만 활성화 시키는 로직!!(공식)
+// 순간적으로 모든 그룹요소를 비활성 처리
+// 그 직후 원하는 요소만 활성화 처리
+// 버튼 클릭 시 li태그의 on 활성화
