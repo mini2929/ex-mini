@@ -27,33 +27,34 @@ main .panel {
   display: flex;
 }
 main .panel li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 50px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 main .panel li:nth-of-type(1) {
-  background-color: aqua;
+  background-image: url(../img/pic00.jpg);
 }
 main .panel li:nth-of-type(2) {
-  background-color: lightgreen;
+  background-image: url(../img/pic11.jpg);
 }
 main .panel li:nth-of-type(3) {
-  background-color: hotpink;
+  background-image: url(../img/pic22.jpg);
 }
 main .panel li:nth-of-type(4) {
-  background-color: orange;
+  background-image: url(../img/pic33.jpg);
 }
 main .panel li:nth-of-type(5) {
-  background-color: violet;
+  background-image: url(../img/pic44.jpg);
 }
 main .btns {
-  width: 100%;
+  width: 80%;
+  padding: 0px 10%;
   position: absolute;
-  bottom: 20px;
+  bottom: 5vh;
   left: 0px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 main .btns li {
   cursor: pointer;

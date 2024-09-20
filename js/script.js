@@ -12,6 +12,8 @@ const btns = frame.querySelectorAll(".btns li");
 panel.style.width = (100 * btns.length) + "%";
 panel.style.height = "100%";
 
+// 절차지향성 로직 (비효율적)
+
 // 스크립트가 실행되자마자 panel의 자식 li를 모두 찾은 다음 반복을 돌며 btns의 개수에 따라 넓이, 높이 동적 스타일링
 panel.querySelectorAll("li").forEach((li) => {li.style.width = (100 / btns.length)+"%";
     li.style.height = "100%";
@@ -23,7 +25,7 @@ btns.forEach((btn,idx) => {
         console.log(idx);
         // new Anime (panel, {marginLeft:-400*idx}, {duration:600});
         // marinLeft는 고정값일 경우에만 적용됨
-        new Anime (panel, {left:( -100 * idx ) + "%"}, {duration:600});
+        new Anime (panel, {left:( -100 * idx ) + "%"}, {duration:500});
 
         btns.forEach((btn) => btn.classList.remove("on"));
 

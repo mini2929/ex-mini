@@ -24,36 +24,40 @@ main {
         li {
             // width: 20%; // 자식요소 100/패널 개수
             // height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 50px;
+            background-repeat:no-repeat;
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+            // background-attachment: fixed 설정 시
+            // 물리적으로 배경 이미지는 각 li 안쪽에 설정되지만
+            // 이미지의 위치값은 li기준이 아닌 브라우저 기준으로 고정됨
 
             &:nth-of-type(1) {
-                background-color: aqua;
+                background-image: url(../img/pic00.jpg)
             }
             &:nth-of-type(2) {
-                background-color: lightgreen;
+                background-image: url(../img/pic11.jpg)
             }
             &:nth-of-type(3) {
-                background-color: hotpink;
+                background-image: url(../img/pic22.jpg)
             }
             &:nth-of-type(4) {
-                background-color: orange;
+                background-image: url(../img/pic33.jpg)
             }
             &:nth-of-type(5) {
-                background-color: violet;
+                background-image: url(../img/pic44.jpg)
             }
         }
     }
 
     .btns {
-        width: 100%;
+        width: 80%;
+        padding: 0px 10%;
         position: absolute;
-        bottom: 20px;
+        bottom: 5vh;
         left: 0px;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
 
         li{
             cursor: pointer;
