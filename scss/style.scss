@@ -11,9 +11,10 @@ main {
 
     .panel {
         position: absolute;
-        top : 0%;
+        top: 0%;
         left: 0%;
         display: flex;
+    
         //anime에서 margin은 퍼센트 모션 처리 불가하므로 absolute의 left = 0 margin-left로 배치
 
         // 민지 이해 : 자식요소인 li태그가 모션값을 받기 위해 퍼센테이지를 기준으로 움직일 경우 Anime에서 막아놓은 것 때문에 에러가 뜸.
