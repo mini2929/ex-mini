@@ -11,6 +11,7 @@ const btns = frame.querySelectorAll(".btns li");
 btns.forEach((btn,idx) => {
     btn.addEventListener("click", () => {
         console.log(idx);
+        new Anime (panel, {marginLeft:-400*idx}, {duration:600});
     });
 });
 
