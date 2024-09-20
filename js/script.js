@@ -11,9 +11,13 @@ const btns = frame.querySelectorAll(".btns li");
 btns.forEach((btn,idx) => {
     btn.addEventListener("click", () => {
         console.log(idx);
-        new Anime (panel, {marginLeft:-400*idx}, {duration:600});
+        // new Anime (panel, {marginLeft:-400*idx}, {duration:600});
+        new Anime (panel, {marginLeft:-100*idx+'%'}, {duration:600});
     });
 });
 
 // li 태그 안쪽 값 불러오기 getAttribute
 // idx 숫자 곱하기 width 값만큼 움직이기
+
+
+// width 퍼센테이지로 바꾸기
